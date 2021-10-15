@@ -1,0 +1,32 @@
+body {
+  background-color: #89e8b7;
+}
+.pink {
+  /* background-image: url(img/cocodrilo.gif); */
+  background-color:#e8ffe6;
+  border-color: black;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.btn-outline-dark {
+  color: white;
+  border-color: white;
+}
+.btn-outline-dark {
+    color: white;
+    border-color: #61fad9;
+}
+img{
+  height: 200px;
+  width: 400px;
+}
+strong{
+  color:#2f592c;
+}
+h2  {
+  color: #2f592c;
+}
+h3{
+
+    color: #2f592c;
+}

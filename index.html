@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="main.css" />
+
+    <title>tip Calculator</title>
+  </head>
+  <body>
+    <div class="container-fluid green">
+
+        <header class="jumbotron my-4 text-center">
+            <p class="lead">
+              <h1 class="title display-3 animated bounce infinite">
+              <strong>Crocky Tips</strong>
+            </h1>
+          </p>
+          <div class="container-fluid">
+
+            <img src="img/crocky.png" alt="">
+
+          </div>
+          </header>
+
+      <div class="row text-center pink">
+        <div class="col-lg-2 col-md-4 col-sm-4 m-auto">
+          <h3>Total cost</h3>
+          <input type="number" id="inputNum1" class="form-control" />
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-4 m-auto">
+        <h2>+</h2>
+      </div>
+      <div class="col-lg-2 col-md-4 col-sm-4 m-auto">
+        <h3>percentage</h3>
+        <input type="number" id="inputNum2" class="form-control" />
+      </div>
+      <div class="col-lg-2 col-md-4 col-sm-4 m-auto">
+        <button
+          type="button"
+          class="btn btn-outline-dark"
+          onclick="addNumbers()"
+        >
+          <h2>=</h2>
+        </button>
+      </div>
+      <div class="col-lg-2 col-md-4 col-sm-4 ">
+        <h2 id="sumQuestionMark">Total Crocky Tips</h2>
+      </div>
+    </div>
+  </div>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      var sum;
+      var num1;
+      var num2;
+      const num =.01;
+
+// 5% = .05
+// 10% = .10
+// 15% = .15
+// 20% = .20
+
+      function addNumbers()
+      {
+        // get inputNum1
+        num1 = document.getElementById('inputNum1').value;
+        // get inputNum2
+        // DO THIS ONE*******************
+        num2 = document.getElementById('inputNum2').value;
+        // add inputNum1 to inputNum2
+        // this will concatenate the numbers.
+        // ex 2 + 2 = 22. That's ok for now.
+        num3 = num2 * num;
+        sum = num1 * num3;
+
+        // get sum1 element set it equal to answer
+        document.getElementById('sumQuestionMark').innerHTML = sum;
+      }
+    </script>
+
+  </body>
+</html>
